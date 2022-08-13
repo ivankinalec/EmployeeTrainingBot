@@ -1,0 +1,15 @@
+CREATE TABLE employees
+(
+id INTEGER PRIMARY KEY NOT NULL,
+employee_id INTEGER NOT NULL UNIQUE,
+first_name VARCHAR NOT NULL,
+middle_name VARCHAR NOT NULL,
+last_name VARCHAR NOT NULL
+);
+
+INSERT INTO employees VALUES (1, 1001, 'Максимов', 'Леонид', 'Николаевич'),
+(2, 1002, 'Елисеев', 'Петр', 'Сергеевич'),
+(3, 1003, 'Гордеев', 'Артур', 'Тарасович'),
+(4, 1004, 'Фокина', 'Евгения', 'Александровна'),
+(5, 1005, 'Пестова', 'Анастасия', 'Алексеевна'),
+(6, 1006, 'Соколова', 'Яна', 'Владимировна');
