@@ -13,7 +13,6 @@ inlineExcelKeyboard = InlineKeyboardMarkup(row_width=3)
 btnELec = InlineKeyboardButton('Лекции', callback_data='eLec')
 btnEVideo = InlineKeyboardButton('Видеолекции', callback_data='eVideo')
 btnETest = InlineKeyboardButton('Тесты', callback_data='eTest')
-#btnEBack = InlineKeyboardButton('Назад', callback_data='eBack')
 inlineExcelKeyboard.add(btnELec, btnEVideo, btnETest)
 
 # Меню для лекций по Excel
