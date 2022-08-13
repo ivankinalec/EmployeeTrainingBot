@@ -10,7 +10,6 @@ class Database:
         with self.connection:
             result = self.cursor.execute("SELECT employee_id FROM employees WHERE employee_id = ?", (employee_id,)).fetchall()
             first_name = str(self.cursor.execute("SELECT first_name from employees WHERE first_name = ?", (employee_id,)).fetchall())
-            #print(len(result))
             return bool(len(result))
 
     def hello(self, first_name):
